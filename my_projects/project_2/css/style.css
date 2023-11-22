@@ -1,0 +1,167 @@
+:root {
+    /* 62.5% == 10px */
+    font-size: 62.5%;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --header-color: #000f37;
+    --paragraph-color: #4f4f4f;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header  */
+  header {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .logo-text {
+    color: #68e1fd;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .menu {
+    float: right;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  /* main */
+  /* Hero */
+  
+  .hero {
+    display: inline-block;
+    padding: 20px;
+    height: 500px;
+    margin: 40px;
+  }
+  .hero-heading {
+    font-size: 5.2rem;
+    color: var(--header-color);
+  }
+  
+  .hero-content {
+    display: inline-block;
+    width: 50%;
+  }
+  .hero-image {
+    float: right;
+    /* margin-left: 500px; */
+  }
+  
+  .hero-image > img {
+    width: 500px;
+  }
+  
+  .hero-text {
+    font-size: 1.8rem;
+    color: var(--paragraph-color);
+    line-height: 1.75;
+  }
+  
+  .hero-btn {
+    background-color: #68e1fd;
+    padding: 14px 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* services */
+  
+  .services {
+    background-color: #68e1fd;
+    height: 1000px;
+  }
+  
+  .description {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .services-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--header-color);
+    margin: 40px 0px 5px 0px;
+    padding: 80px 0px 20px 0px;
+  }
+  
+  .services-text {
+    font-size: 1.6rem;
+    color: var(--paragraph-color);
+    max-width: 33.3%;
+    margin: 0 auto;
+  }
+  
+  /* services */
+  /* card */
+  
+  .card {
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .card-content {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .service-list {
+    margin: 0px 50px;
+    padding: 90px 0px 0px 70px;
+  }
+  .service-list-item {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding: 15px;
+  }
+  
+  
+  /* services image */
+  
+  .services-image{
+      float: right;
+      margin: 70px 100px 0px 0px;
+      padding: 0px 50px 0px 0px;
+  }
+  
+  /* footer */
+  
+  
+  footer{
+      background-color: white;
+      height: 100px;
+  }
+  
+  .wrapper{
+      padding: 50px;
+  }
+  .copyright{
+      font-size: 1.6rem;
+      color: var(--header-color);
+  }
+  
+  .lists{
+      float: right;
+  }
+  .list-item{
+  
+      list-style-type: none;
+      display: inline-block;
+      padding: 0px 20px;
+  }
+  
+  .sm-icon{
+      text-decoration: none;
+      color: var(--header-color);
+  }

@@ -1,0 +1,50 @@
+/* Original styles - don't edit these! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg1 {
+  background: url(bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add your styles below here*/
+
+body {
+  background-color: rgb(70, 69, 69);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  height: 70vh;
+  font-size: 2rem;
+
+}
+
+.container > div div {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  opacity: 0.9;
+}
