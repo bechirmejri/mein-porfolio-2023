@@ -1,0 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #2a2a2a;
+  --text-color: #fff;
+  --second-color: #ccc;
+  --main-color: rgb(155, 27, 38);
+}
+
+/*==== Body ====*/
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0 5rem;
+}
+
+/*===== Nav Section ====*/
+.navbar {
+  display: flex;
+  position: relative;
+  width: 95%;
+  height: 10rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+/*==== Navbar Logo ====*/
+#logo-img {
+  width: 13rem;
+  box-shadow: 10px 10px 80px rgb(221, 196, 196);
+  animation: imageAnimation 5s infinite;
+}
+
+.navbar-links {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: #a19e9e;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 2.5rem;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+.navbar-links a::after {
+  position: absolute;
+  content: "";
+  height: 2.5px;
+  width: 0px;
+  bottom: 2.2rem;
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover::after {
+  width: 50%;
+}
+
+.burger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 3rem;
+  height: 0.3rem;
+  background: rgb(160, 224, 226);
+  margin: 0.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+/* ===== Home Section / Text and Image ==== */
+section {
+  padding: 10% 10%;
+}
+
+.home {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  line-height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  right: 14%;
+  box-shadow: 10px 10px 80px rgb(221, 196, 196);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  border: 5px solid rgb(130, 177, 196);
+  animation: imageAnimation 5s infinite;
+}
+
+@keyframes imageAnimation {
+  0% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  50% {
+    border-radius: 35% 35% 35% 35% / 35% 35% 35% 35%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+}
+
+.one {
+  display: inline-block;
+  padding: 0 15px;
+  margin-top: 10px;
+  line-height: 45px;
+  font-size: 30px;
+  font-weight: 500;
+  background: blue;
+  border-radius: 20px;
+  color: var(--text-color);
+}
+
+.two {
+  display: inline-block;
+  color: var(--second-color);
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 2rem;
+}
+
+.span-red {
+  color: var(--main-color);
+}
+
+.home-content h1 {
+  margin: 1.5rem;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--text-color);
+  box-shadow: 0 0 40px rgb(158, 126, 132);
+  border-radius: 40px;
+}
+
+.home-content h3 span {
+  position: relative;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: transparent;
+  -webkit-text-stroke: 0.6px #fff;
+  background-image: linear-gradient(rgb(103, 161, 184), gold);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -400px 0;
+  animation: animateText 5s linear infinite;
+}
+
+@keyframes animateText {
+  0%,
+  95%,
+  100% {
+    background-position: -400px 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+b {
+  font-size: 1.3rem;
+}
+
+/*  ====== Buttons Section ====== */
+
+.buttons {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.btn1,
+.btn2 {
+  display: inline-block;
+  padding: 13px 18px;
+  background: #024252;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-top: 50px;
+  margin-left: -1rem;
+  margin-right: 7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: transparent;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+  transform: translateY(-10px);
+}
+
+/* ====== Home Button ====== */
+/* a.home-btn {
+  width: 5.5rem;
+  height: 3.3rem;
+  border: 3px solid rgb(143, 9, 9);
+  color: rgb(122, 15, 74);
+  background: rgb(134, 90, 88);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 60px;
+  right: 150px;
+}
+
+a.home-btn:hover{
+  background-color: transparent;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+ 
+} */
+
+/* ===== 'About Me' Section ===== */
+/* .about-me {
+  width: 100%;
+  height: 120vh;
+  padding: 13rem;
+
+  background-color: #023836;
+}
+
+.about-me img {
+  height: auto;
+  width: 500px;
+  margin-top: 5rem;
+  border-radius: 80px;
+  box-shadow: 0 0 100px rgb(196, 130, 130);
+  border: 5px solid rgb(196, 130, 130);
+}
+
+.about-text {
+  width: 550px;
+  margin-top: 5rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.about-text h5 {
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.about-me span {
+  color: rgb(155, 27, 38);
+}
+
+.about-text p {
+  color: #ccc;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+
+button {
+  background-color: #520202;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+  transform: translateY(-10px);
+} */
+
+/* ===== Projects Section ======= */
+/* 
+.projects {
+  background: #0d5753;
+  width: 100%;
+  height: 100vh;
+  padding: 150px;
+}
+
+.title h2 {
+  color: white;
+  font-size: 4rem;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: #520202;
+  width: 340px;
+  height: 360px;
+  padding: 20px 35px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card i {
+  display: block;
+  margin: 25px 0;
+  font-size: 50px;
+  color: red;
+}
+
+.card .bx bx-code-alt:before {
+  content: "\e163";
+}
+
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin-bottom: 5rem;
+}
+
+.card .button {
+  background-color: rgb(7, 73, 32);
+  color: white;
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 9px 23px;
+
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+  transform: translateY(-10px);
+} */
+
+/* ===== Contact Section ===== */
+/* .contact {
+  padding: 60px 15%;
+  background: #28504d;
+  width: 100%;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 6rem;
+}
+
+
+.contact-img img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10rem;
+
+  margin-left: 8rem;
+  border-radius: 20%;
+  box-shadow: 0 0 100px rgb(196, 130, 130);
+  border: 5px solid rgb(196, 130, 130);
+}
+
+.container-contact h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.container-contact span {
+  color: #9b3232;
+}
+
+.container-contact p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+
+.container-contact a {
+  color: #eb4747;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-contact a:hover {
+  color: #95b3a1;
+}
+
+.container-contact form {
+  position: relative;
+}
+
+.container-contact form input,
+form textarea {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  outline: none;
+  background: #95b3a1;
+  color: #251f1f;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.container-contact textarea {
+  height: 200px;
+  resize: none;
+  border-radius: 1rem;
+}
+
+.container-contact .btn {
+  display: inline-block;
+  background: #754040;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  width: 15rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-left: 10rem;
+}
+
+.container-contact form .btn:hover {
+  border: 2px solid #a81313;
+  background: transparent;
+  transform: scale(1.1);
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+}
+
+
+
+/* ===== Social Medias Icons ===== */
+/* 
+.social-medias {
+  margin-top: 15px;
+}
+
+
+.social-medias b{
+  margin-right: 2rem;
+  margin-left: 8rem;
+  ;
+}
+
+
+.social-medias a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgb(255, 0, 76);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(218, 32, 72);
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.social-medias a:hover {
+  background: rgb(17, 248, 160);
+  color: #0d5753;
+  box-shadow: 0 0 30px rgb(37, 219, 219);
+  border: 2px solid rgb(0, 255, 221);
+  transform: translateY(-7px);
+}
+
+
+/* ===== FOOTER ===== */
+.footer p {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: smaller;
+}
+*/
+
+
+
+
+
+/* ===== Responsive Section ======= */
+
+/* Break Points - <600px, 601px, 768px. 992px, 1200px */
+
+
+
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 480px) {
+}
+
+/* @media only screen and (max-width: 767px){
+ 
+   .navbar,
+   .home,
+   .buttons,
+   .about-me,
+   .projects,
+   .contact,
+   .social-medias{
+
+   }
+}
+
+/* TABLETS VERSION */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  .navbar,
+  .home,
+  .buttons,
+  .about-me,
+  .projects,
+  .contact,
+  .social-medias{
+    width: 100%;
+    background-color: #4e4545;
+  }
+}
+   
+  
+
+@media (min-width: 1200px){
+  .navbar,
+  .home,
+  .buttons,
+  .about-me,
+  .projects,
+  .contact,
+  .social-medias{
+    width: 100%;
+    background-color: rgb(182, 159, 159);
+  }
+}   */

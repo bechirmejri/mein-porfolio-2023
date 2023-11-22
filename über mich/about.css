@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #2a2a2a;
+  --text-color: #fff;
+  --second-color: #ccc;
+  --main-color: rgb(155, 27, 38);
+}
+
+/*==== Body ====*/
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0 5rem;
+}
+
+/* ===== 'About Me' Section ===== */
+.about-me {
+  width: 100%;
+  height: 100vh;
+  padding: 7rem;
+  background-color: #023836;
+}
+
+.about-me img {
+  height: auto;
+  width: 500px;
+  margin-top: 5rem;
+  border-radius: 80px;
+  box-shadow: 0 0 100px rgb(196, 130, 130);
+  border: 5px solid rgb(196, 130, 130);
+}
+
+.about-text {
+  width: 550px;
+  margin-top: 5rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.about-text h5 {
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.about-me span {
+  color: rgb(155, 27, 38);
+}
+
+.about-text p {
+  color: #ccc;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+
+button {
+  background-color: #520202;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+  transform: translateY(-10px);
+}
+
+/* ====== Home Button ====== */
+a.home-btn {
+  width: 5.5rem;
+  height: 3.3rem;
+  border: 3px solid rgb(143, 9, 9);
+  color: rgb(122, 15, 74);
+  background: rgb(134, 90, 88);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 60px;
+  right: 150px;
+}
+
+a.home-btn:hover {
+  background-color: transparent;
+  border: 2px solid red;
+  box-shadow: 0 0 50px rgb(184, 47, 77);
+}
