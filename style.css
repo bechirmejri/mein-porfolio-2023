@@ -28,8 +28,8 @@ body {
   width: 95%;
   height: 10rem;
   margin: 1rem;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   background: transparent;
 }
 
@@ -106,12 +106,12 @@ margin: 0;
   } 
   }
 .navbar {
-    flex-direction: column;
+    flex-direction:column;
     
     height: auto;
   } 
 .navbar-links {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     width: 100%;
   }
@@ -122,8 +122,9 @@ margin: 0;
     display: block;
   }
 .home-image {
-    width: 50%;
+    width: 60%;
     right: 0;
+    top: 150px;
   }
 
 .home-content h1 {
